@@ -4,8 +4,8 @@ const Nav = () => {
             <h2>LOGO</h2>
             <h2>Home</h2>
             <h2>About</h2>
-            <h2>Search</h2>
-            <h2>Other</h2>
+            <h2>NavOption</h2>
+            <h2>NavOption</h2>
         </div>
     )
 }
