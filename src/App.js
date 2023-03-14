@@ -1,16 +1,10 @@
 import './App.css';
-import Nav from './components/Nav';
-import Title from './components/Title';
-import Search from './components/Search';
-import Results from './components/Results';
+import Home from './components/Home';
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Title />
-      <Search />
-      <Results />
+      <Home />
     </div>
   );
 }
