@@ -6,23 +6,21 @@ import About from './components/About';
 function App() {
   return (
     <div className="App">
-      {/* 
+
       <BrowserRouter>
         <Routes>
           <Route
             path='/'
             element={<Home />}
           />
-
           <Route
             path='/about'
             element={<About />}
           />
 
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
 
-      <About />
     </div>
   );
 }
