@@ -1,9 +1,26 @@
+import { Link } from "react-router-dom";
+
 const Nav = () => {
     return (
         <div className="nav">
-            <h2>LOGO</h2>
-            <h2>Home</h2>
-            <h2>About</h2>
+            <Link
+                className="link"
+                to='/'>
+                <h2>LOGO</h2>
+            </Link>
+
+            <Link
+                className="link"
+                to='/'>
+                <h2>Home</h2>
+            </Link>
+
+            <Link
+                className="link"
+                to='/about'>
+                <h2>About</h2>
+            </Link>
+
             <h2>NavOption</h2>
             <h2>NavOption</h2>
         </div>
