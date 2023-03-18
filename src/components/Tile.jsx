@@ -1,7 +1,8 @@
-const Tile = () => {
+const Tile = ({ result }) => {
     return (
         <div>
-            <h1>Movie Tile</h1>
+            <h3>{result.original_title}</h3>
+
         </div>
     )
 }

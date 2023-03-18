@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const Search = ({ searchTerm, setSearchTerm }) => {
+const Search = ({ searchTerm, setSearchTerm, results, setResults }) => {
 
     const baseURL = 'https://api.themoviedb.org/3'
     const API_key = '6d2d21f7549a1e994baf9c19bdbb84e4'
@@ -14,8 +14,8 @@ const Search = ({ searchTerm, setSearchTerm }) => {
                 searchTerm)}&page=${'1'}&include_adult=false`
         );
         const res = await req.json();
-        console.log(res)
-        return res;
+        setResults(res)
+        console.log('results:', results);
     };
 
     const handleSearch = (e) => {
@@ -25,11 +25,11 @@ const Search = ({ searchTerm, setSearchTerm }) => {
         // console.log('2', searchTerm)
     }
 
-    searchMovies(searchTerm);
+    // searchMovies(searchTerm);
 
-    // useEffect(() => {
-    //     searchMovies();
-    // }, [searchTerm])
+    useEffect(() => {
+        searchMovies(searchTerm);
+    }, [searchTerm])
 
     return (
         <div>

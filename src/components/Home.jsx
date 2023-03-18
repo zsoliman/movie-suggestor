@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 
 const Home = () => {
     const [searchTerm, setSearchTerm] = useState('')
+    const [results, setResults] = useState('')
 
     return (
         <div>
@@ -15,10 +16,14 @@ const Home = () => {
             <Search
                 searchTerm={searchTerm}
                 setSearchTerm={setSearchTerm}
+                results={results}
+                setResults={setResults}
             />
             <Results
                 searchTerm={searchTerm}
                 setSearchTerm={setSearchTerm}
+                results={results}
+                setResults={setResults}
             />
         </div>
     )
