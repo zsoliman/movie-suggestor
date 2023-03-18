@@ -3,13 +3,23 @@ import Title from './Title.jsx'
 import Search from './Search.jsx'
 import Results from './Results.jsx'
 
+import { useState, useEffect } from 'react';
+
 const Home = () => {
+    const [searchTerm, setSearchTerm] = useState('')
+
     return (
         <div>
             <Nav />
             <Title />
-            <Search />
-            <Results />
+            <Search
+                searchTerm={searchTerm}
+                setSearchTerm={setSearchTerm}
+            />
+            <Results
+                searchTerm={searchTerm}
+                setSearchTerm={setSearchTerm}
+            />
         </div>
     )
 }

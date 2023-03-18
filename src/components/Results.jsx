@@ -1,3 +1,5 @@
+import Tile from "./Tile";
+
 const Results = () => {
     return (
         <div className="results">

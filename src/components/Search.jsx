@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 
-const Search = () => {
+const Search = ({ searchTerm, setSearchTerm }) => {
 
     const baseURL = 'https://api.themoviedb.org/3'
     const API_key = '6d2d21f7549a1e994baf9c19bdbb84e4'
-    const [searchTerm, setSearchTerm] = useState('')
+
 
     const searchMovies = async (searchTerm, pageNum) => {
 
