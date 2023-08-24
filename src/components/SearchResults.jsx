@@ -1,6 +1,6 @@
 import Tile from "./Tile";
 
-const Results = ({ results }) => {
+const SearchResults = ({ results }) => {
     return (
         <div className="results">
             <h1>Pick a Movie:</h1>
@@ -18,4 +18,4 @@ const Results = ({ results }) => {
     )
 }
 
-export default Results;
+export default SearchResults;

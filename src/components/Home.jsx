@@ -1,7 +1,7 @@
 import Nav from './Nav.jsx'
 import Title from './Title.jsx'
 import Search from './Search.jsx'
-import Results from './Results.jsx'
+import SearchResults from './SearchResults.jsx'
 
 import { useState, useEffect } from 'react';
 
@@ -19,7 +19,7 @@ const Home = () => {
                 results={results}
                 setResults={setResults}
             />
-            <Results
+            <SearchResults
                 searchTerm={searchTerm}
                 setSearchTerm={setSearchTerm}
                 results={results}
