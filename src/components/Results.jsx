@@ -1,11 +1,11 @@
 import Tile from "./Tile";
 
-const Results = ({ searchTerm, setSearchTerm, results, setResults }) => {
+const Results = ({ results }) => {
     return (
         <div className="results">
-            <h1>Results:</h1>
+            <h1>Pick a Movie:</h1>
 
-            {results.results.map((result) => {
+            {results.results?.map((result) => {
                 return (
                     <Tile
                         key={result.id}

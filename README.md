@@ -5,7 +5,8 @@
 ##      |--> home --> nav
 ##               |--> title
 ##               |--> search
-##               |--> results
+##               |--> results --> tile
+##                           |-->
 
 # Feature List:
 ## search a movie
