@@ -1,12 +1,15 @@
 # movie-suggestor
 
 # Component Tree:
-## app.js --> about
-##      |--> home --> nav
-##               |--> title
-##               |--> search
-##               |--> results --> tile
-##                           |-->
+## app.js 
+##    |--> about
+##    |--> home 
+##         |--> nav
+##         |--> title
+##         |--> search
+##         |--> searchresults 
+##                  |--> tile
+##                        |-->moviesug
 
 # Feature List:
 ## search a movie
