@@ -5,8 +5,8 @@ const Tile = ({ result }) => {
     }
 
     return (
-        <div>
-            <h3 onClick={findMyMovie}>{result.original_title}</h3>
+        <div className="tile">
+            <h3 className="select" onClick={findMyMovie}>{result.original_title}</h3>
 
         </div>
     )
